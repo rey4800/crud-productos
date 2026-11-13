@@ -1,0 +1,22 @@
+# Spring Boot / Maven / Gradle
+Tienda/target/
+Tienda/build/
+Tienda/.gradle/
+Tienda/.mvn/wrapper/maven-wrapper.jar
+Tienda/.idea/
+Tienda/*.iml
+Tienda/.vscode/
+Tienda/.classpath
+Tienda/.project
+Tienda/.settings/
+
+# Angular
+TiendaFront/node_modules/
+TiendaFront/dist/
+TiendaFront/.angular/
+TiendaFront/.vscode/
+TiendaFront/.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db

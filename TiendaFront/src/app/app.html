@@ -1,0 +1,26 @@
+<h1>Productos</h1>
+
+<input [(ngModel)]="producto.nombre" placeholder="Nombre" required/>
+<input [(ngModel)]="producto.precio" type="number" placeholder="Precio" required />
+<button (click)="guardar()">Guardar</button>
+<button (click)="limpiar()">Cancelar</button>
+
+<table border="1">
+  <tr>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Precio</th>
+    <th>Acciones</th>
+  </tr>
+  @for (p of productos(); track p.id) {
+    <tr>
+      <td>{{ p.id }}</td>
+      <td>{{ p.nombre }}</td>
+      <td>{{ p.precio }}</td>
+      <td>
+        <button (click)="editar(p)">Editar</button>
+        <button (click)="eliminar(p.id!)">Eliminar</button>
+      </td>
+    </tr>
+  }
+</table>
